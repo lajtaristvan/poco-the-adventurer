@@ -21,7 +21,7 @@ public class CharacterMovement : MonoBehaviour
         set { _hasPlayerTarget = value; }
     }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         myCollider = GetComponent<BoxCollider2D>();
     }

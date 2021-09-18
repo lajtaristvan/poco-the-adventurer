@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5567444540889744525, guid: ade80089489544fe3a57c1b14805a58d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5567444540889744528, guid: ade80089489544fe3a57c1b14805a58d, type: 3}
       propertyPath: m_TileColorArray.Array.size
       value: 3
@@ -477,7 +481,7 @@ GameObject:
   - component: {fileID: 731709005}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,6 +850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2010955931}
+  - component: {fileID: 2010955932}
   m_Layer: 0
   m_Name: Camera Holder
   m_TagString: Untagged
@@ -868,3 +873,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2010955932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010955930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcd7a50f4a0c994db65d6000ec30451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bound_X: 0.3
+  bound_Y: 0.15
