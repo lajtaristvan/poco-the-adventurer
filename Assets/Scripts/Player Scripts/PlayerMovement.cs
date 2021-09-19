@@ -14,6 +14,8 @@ public class PlayerMovement : CharacterMovement
 
     private Animator anim;
 
+    private PlayerWeaponManager playerWeaponManager;    
+
     protected override void Awake()
     {
         base.Awake();
@@ -21,6 +23,8 @@ public class PlayerMovement : CharacterMovement
         mainCam = Camera.main;
 
         anim = GetComponent<Animator>();
+
+        playerWeaponManager = GetComponent<PlayerWeaponManager>();
     }
 
     private void FixedUpdate()
@@ -64,5 +68,40 @@ public class PlayerMovement : CharacterMovement
 
         anim.SetFloat(TagManager.FACE_X_ANIMATION_PARAMETER, x);
         anim.SetFloat(TagManager.FACE_Y_ANIMATION_PARAMETER, y);
+
+        ActivateWeaponForSider(x, y);
+    }
+
+    void ActivateWeaponForSider(float x, float y)
+    {
+        // Side
+        if (x == 1f && y == 0f)
+        {
+            playerWeaponManager.ActivateGun(0);
+        }
+
+        // Up
+        if (x == 0f && y == 1f)
+        {
+            playerWeaponManager.ActivateGun(1);
+        }
+
+        // Down
+        if (x == 0f && y == -1f)
+        {
+            playerWeaponManager.ActivateGun(2);
+        }
+
+        // Side Up
+        if (x == 1f && y == 1f)
+        {
+            playerWeaponManager.ActivateGun(3);
+        }
+
+        // Side Down
+        if (x == 1f && y == -1f)
+        {
+            playerWeaponManager.ActivateGun(4);
+        }
     }
 }

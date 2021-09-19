@@ -1135,6 +1135,7 @@ GameObject:
   - component: {fileID: 731709007}
   - component: {fileID: 731709006}
   - component: {fileID: 731709005}
+  - component: {fileID: 731709011}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -1291,6 +1292,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731709011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731709004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4add40fa7d596345b5d2423c104d192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerWeapons:
+  - {fileID: 1199207554}
+  - {fileID: 1379743684}
+  - {fileID: 1992391621}
+  - {fileID: 1502523116}
 --- !u!1 &859505423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,6 +1646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1199207553}
+  - component: {fileID: 1199207554}
   m_Layer: 0
   m_Name: Pistol Gun
   m_TagString: Untagged
@@ -1654,6 +1673,24 @@ Transform:
   m_Father: {fileID: 731709010}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1199207554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199207552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5d29c12bed3a4581663962f9ee832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 1663220429}
+  - {fileID: 1704751191}
+  - {fileID: 467591831}
+  - {fileID: 404400986}
+  - {fileID: 1546524917}
 --- !u!1 &1202898608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1864,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1379743683}
+  - component: {fileID: 1379743684}
   m_Layer: 0
   m_Name: Matter Gun
   m_TagString: Untagged
@@ -1853,6 +1891,24 @@ Transform:
   m_Father: {fileID: 731709010}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1379743684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379743682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5d29c12bed3a4581663962f9ee832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 501053110}
+  - {fileID: 2096320559}
+  - {fileID: 312668884}
+  - {fileID: 1166257460}
+  - {fileID: 2108890841}
 --- !u!213 &1494074776
 Sprite:
   m_ObjectHideFlags: 0
@@ -2072,6 +2128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1502523115}
+  - component: {fileID: 1502523116}
   m_Layer: 0
   m_Name: Flame Thrower Gun
   m_TagString: Untagged
@@ -2098,6 +2155,24 @@ Transform:
   m_Father: {fileID: 731709010}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1502523116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502523114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5d29c12bed3a4581663962f9ee832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 125256793}
+  - {fileID: 670003904}
+  - {fileID: 1918586214}
+  - {fileID: 1371248542}
+  - {fileID: 193054741}
 --- !u!1 &1546524917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992391620}
+  - component: {fileID: 1992391621}
   m_Layer: 0
   m_Name: Laser Gun
   m_TagString: Untagged
@@ -2461,6 +2537,24 @@ Transform:
   m_Father: {fileID: 731709010}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1992391621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992391619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5d29c12bed3a4581663962f9ee832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 286695335}
+  - {fileID: 946018836}
+  - {fileID: 1013013516}
+  - {fileID: 1202898608}
+  - {fileID: 859505423}
 --- !u!1 &2010955930
 GameObject:
   m_ObjectHideFlags: 0
